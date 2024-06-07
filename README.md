@@ -6,11 +6,11 @@
 cd /custom_nodes
 git clone https://github.com/LZpenguin/ComfyUI-Text.git
 ```
-1. Register folder_path
+2. Register folder_path
 
 Edit  `/folder_paths.py`
 
-Add follow code:
+Add following code:
 ```
 folder_names_and_paths["font"] = ([os.path.join(models_dir, "font")], [".ttf"])
 ```
