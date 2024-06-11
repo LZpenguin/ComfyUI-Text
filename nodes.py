@@ -3,7 +3,10 @@ import numpy as np
 import math
 import torch
 from PIL import Image, ImageDraw, ImageFont
+import os
+from folder_paths import folder_names_and_paths, models_dir
 import folder_paths
+folder_names_and_paths["font"] = ([os.path.join(models_dir, "font")], [".ttf"])
 
 class AddTextByMask:
     @classmethod
