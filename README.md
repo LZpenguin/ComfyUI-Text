@@ -9,4 +9,4 @@ git clone https://github.com/LZpenguin/ComfyUI-Text.git
 ## Example
 [Test Workflow](./example/add_text.json)
 
-![](./example/image.png)
+![image](./example/image.png)
