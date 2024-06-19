@@ -48,7 +48,7 @@ class AddTextByMask:
 
             tmp = np.zeros_like(mask)
 
-            rows = min(max(round(h/w*2),1),3)
+            rows = min(max(round(h/w*2.5),1),3)
             row_num = math.ceil(len(text)/rows)
             font_size = math.floor(w/row_num)
             dx = round(w-font_size*row_num,1)

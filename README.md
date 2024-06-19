@@ -14,6 +14,10 @@ mv ./font ../../models
 ```
 
 ## Example
-[Test Workflow](./example/add_text.json)
+[Add Wordart Workflow](./example/add_text.json)
 
 ![image](./example/image.png)
+
+[Add Normal Text Workflow](./example/add_text2.json)
+
+![image](./example/image2.png)

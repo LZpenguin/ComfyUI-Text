@@ -1,6 +1,6 @@
 {
-  "last_node_id": 855,
-  "last_link_id": 1837,
+  "last_node_id": 856,
+  "last_link_id": 1843,
   "nodes": [
     {
       "id": 591,
@@ -106,7 +106,7 @@
         "1": 78
       },
       "flags": {},
-      "order": 5,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -349,7 +349,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 10,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -434,7 +434,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 8,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
@@ -473,7 +473,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 16,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -558,7 +558,7 @@
         "1": 66
       },
       "flags": {},
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -663,7 +663,7 @@
         "1": 278
       },
       "flags": {},
-      "order": 13,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -723,55 +723,6 @@
       ]
     },
     {
-      "id": 208,
-      "type": "CLIPTextEncode",
-      "pos": [
-        -3849,
-        -7
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 604
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "link": 1652,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            1584,
-            1771,
-            1793
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode"
-      },
-      "widgets_values": [
-        "green tree"
-      ]
-    },
-    {
       "id": 209,
       "type": "CLIPTextEncode",
       "pos": [
@@ -783,7 +734,7 @@
         "1": 200
       },
       "flags": {},
-      "order": 6,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -810,63 +761,6 @@
       },
       "widgets_values": [
         "dark, deep, blur"
-      ]
-    },
-    {
-      "id": 82,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        -4844,
-        590
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            1223,
-            1796
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            604,
-            605
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            1527,
-            1529,
-            1592,
-            1631,
-            1795,
-            1806
-          ],
-          "shape": 3,
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "Juggernaut_sd1.5.safetensors"
       ]
     },
     {
@@ -934,7 +828,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            1777
+            1842
           ],
           "shape": 3,
           "slot_index": 0
@@ -1097,7 +991,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 15,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
@@ -1200,7 +1094,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "outputs": [
         {
@@ -1233,7 +1127,7 @@
         "1": 82
       },
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -1473,7 +1367,7 @@
         "1": 268
       },
       "flags": {},
-      "order": 9,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1611,47 +1505,6 @@
       }
     },
     {
-      "id": 644,
-      "type": "Add_text_by_mask",
-      "pos": [
-        -4280,
-        -475
-      ],
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 12,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 1447
-        }
-      ],
-      "outputs": [
-        {
-          "name": "mask",
-          "type": "MASK",
-          "links": [
-            1448,
-            1821
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Add_text_by_mask"
-      },
-      "widgets_values": [
-        "庞门正道粗书体6.0.ttf",
-        "兔展"
-      ]
-    },
-    {
       "id": 653,
       "type": "PreviewImage",
       "pos": [
@@ -1675,66 +1528,6 @@
       "properties": {
         "Node name for S&R": "PreviewImage"
       }
-    },
-    {
-      "id": 819,
-      "type": "JWImageResize",
-      "pos": [
-        -3063,
-        -512
-      ],
-      "size": {
-        "0": 315,
-        "1": 106
-      },
-      "flags": {},
-      "order": 25,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 1777
-        },
-        {
-          "name": "width",
-          "type": "INT",
-          "link": 1779,
-          "widget": {
-            "name": "width"
-          }
-        },
-        {
-          "name": "height",
-          "type": "INT",
-          "link": 1780,
-          "widget": {
-            "name": "height"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1778,
-            1781,
-            1798,
-            1825
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "JWImageResize"
-      },
-      "widgets_values": [
-        512,
-        512,
-        "bicubic"
-      ]
     },
     {
       "id": 670,
@@ -1981,56 +1774,6 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       }
-    },
-    {
-      "id": 326,
-      "type": "LoadImage",
-      "pos": [
-        -4822,
-        192
-      ],
-      "size": {
-        "0": 315,
-        "1": 314.0000305175781
-      },
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1482,
-            1577,
-            1608,
-            1630,
-            1651,
-            1744,
-            1749,
-            1828,
-            1830
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            1447
-          ],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "clipspace/clipspace-mask-3008356.0999999046.png [input]",
-        "image"
-      ]
     },
     {
       "id": 715,
@@ -2329,48 +2072,6 @@
       ]
     },
     {
-      "id": 645,
-      "type": "MaskToImage",
-      "pos": [
-        -3836,
-        -502
-      ],
-      "size": {
-        "0": 220.39073181152344,
-        "1": 51.86518859863281
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "mask",
-          "type": "MASK",
-          "link": 1448
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            1455,
-            1475,
-            1747,
-            1788,
-            1827,
-            1833,
-            1837
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "MaskToImage"
-      }
-    },
-    {
       "id": 846,
       "type": "ImpactGaussianBlurMask",
       "pos": [
@@ -2382,13 +2083,13 @@
         "1": 82
       },
       "flags": {},
-      "order": 18,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
           "name": "mask",
           "type": "MASK",
-          "link": 1821
+          "link": 1840
         }
       ],
       "outputs": [
@@ -2465,7 +2166,7 @@
         "1": 290
       },
       "flags": {},
-      "order": 7,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -2495,17 +2196,322 @@
       "widgets_values": [
         "$700-0"
       ]
+    },
+    {
+      "id": 645,
+      "type": "MaskToImage",
+      "pos": [
+        -3851,
+        -517
+      ],
+      "size": {
+        "0": 220.39073181152344,
+        "1": 51.86518859863281
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 1839
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1455,
+            1475,
+            1747,
+            1788,
+            1827,
+            1833,
+            1837
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      }
+    },
+    {
+      "id": 856,
+      "type": "Add_text_by_mask",
+      "pos": [
+        -4291,
+        -521
+      ],
+      "size": {
+        "0": 315,
+        "1": 150
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 1841
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 1838
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": [
+            1839,
+            1840
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Add_text_by_mask"
+      },
+      "widgets_values": [
+        "庞门正道粗书体6.0.ttf",
+        "#000",
+        1,
+        "兔展"
+      ]
+    },
+    {
+      "id": 326,
+      "type": "LoadImage",
+      "pos": [
+        -4822,
+        192
+      ],
+      "size": {
+        "0": 315,
+        "1": 314.0000305175781
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1482,
+            1577,
+            1608,
+            1630,
+            1651,
+            1744,
+            1749,
+            1828,
+            1830,
+            1841
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            1838
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-454863.1999999881.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 819,
+      "type": "JWImageResize",
+      "pos": [
+        -3063,
+        -512
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 1842
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "link": 1779,
+          "widget": {
+            "name": "width"
+          }
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "link": 1780,
+          "widget": {
+            "name": "height"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1778,
+            1781,
+            1798,
+            1825
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JWImageResize"
+      },
+      "widgets_values": [
+        512,
+        512,
+        "bicubic"
+      ]
+    },
+    {
+      "id": 208,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -3849,
+        -7
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 1843
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 1652,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            1584,
+            1771,
+            1793
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode"
+      },
+      "widgets_values": [
+        "green tree"
+      ]
+    },
+    {
+      "id": 82,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -4844,
+        590
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            1223,
+            1796
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            605,
+            1843
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            1527,
+            1529,
+            1592,
+            1631,
+            1795,
+            1806
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "SD1.5/Juggernaut_sd1.5.safetensors"
+      ]
     }
   ],
   "links": [
-    [
-      604,
-      82,
-      1,
-      208,
-      0,
-      "CLIP"
-    ],
     [
       605,
       82,
@@ -2537,22 +2543,6 @@
       325,
       0,
       "MODEL"
-    ],
-    [
-      1447,
-      326,
-      1,
-      644,
-      0,
-      "MASK"
-    ],
-    [
-      1448,
-      644,
-      0,
-      645,
-      0,
-      "MASK"
     ],
     [
       1455,
@@ -2915,14 +2905,6 @@
       "IMAGE"
     ],
     [
-      1777,
-      649,
-      0,
-      819,
-      0,
-      "IMAGE"
-    ],
-    [
       1778,
       819,
       0,
@@ -3131,14 +3113,6 @@
       "IMAGE"
     ],
     [
-      1821,
-      644,
-      0,
-      846,
-      0,
-      "MASK"
-    ],
-    [
       1822,
       846,
       0,
@@ -3241,16 +3215,64 @@
       714,
       2,
       "IMAGE"
+    ],
+    [
+      1838,
+      326,
+      1,
+      856,
+      1,
+      "MASK"
+    ],
+    [
+      1839,
+      856,
+      1,
+      645,
+      0,
+      "MASK"
+    ],
+    [
+      1840,
+      856,
+      1,
+      846,
+      0,
+      "MASK"
+    ],
+    [
+      1841,
+      326,
+      0,
+      856,
+      0,
+      "IMAGE"
+    ],
+    [
+      1842,
+      649,
+      0,
+      819,
+      0,
+      "IMAGE"
+    ],
+    [
+      1843,
+      82,
+      1,
+      208,
+      0,
+      "CLIP"
     ]
   ],
   "groups": [],
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.5054470284992973,
+      "scale": 0.740024994425824,
       "offset": {
-        "0": 3018.5722389839084,
-        "1": -279.8131049724791
+        "0": 4963.130499817508,
+        "1": 578.762064489684
       }
     }
   },
