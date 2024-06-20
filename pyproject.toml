@@ -9,6 +9,6 @@ Repository = "https://github.com/LZpenguin/ComfyUI-Text"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "lzpenguin"
 DisplayName = "ComfyUI-Text"
 Icon = ""
